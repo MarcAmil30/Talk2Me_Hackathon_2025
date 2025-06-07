@@ -1,0 +1,1897 @@
+"{'cdate': 1717214359060,
+ 'content': {'TLDR': {'value': 'We present PutnamBench, a benchmark of 1337 '
+                               'formalizations of Putnam competition problems '
+                               'in Lean 4, Isabelle, and Coq.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'tsoukalas2024putnambench,\n'
+                                  'title={PutnamBench: A Multilingual '
+                                  'Competition-Mathematics Benchmark for '
+                                  'Formal Theorem-Proving},\n'
+                                  'author={George Tsoukalas and Jasper Lee and '
+                                  'John Jennings and Jimmy Xin and Michelle '
+                                  'Ding and Michael Jennings and Amitayush '
+                                  'Thakur and Swarat Chaudhuri},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=vqW1VRFeVP}\n'
+                                  '}'},
+             'abstract': {'value': 'We present PutnamBench, a new multilingual '
+                                   'evaluation benchmark for formal '
+                                   'theorem-proving. PutnamBench consists of '
+                                   'formalizations of problems sourced from '
+                                   'the William Lowell Putnam Mathematical '
+                                   'Competition, the premier '
+                                   'undergraduate-level mathematics '
+                                   'competition in North America. All the '
+                                   'problem statements come with '
+                                   'formalizations in Lean 4 and Isabelle; a '
+                                   'substantial subset have Coq formalizations '
+                                   'as well. PutnamBench consists of 1337 '
+                                   'hand-written formalizations across the '
+                                   'three proof assistants, and aims to '
+                                   'benchmark the next generation of '
+                                   'theorem-proving algorithms for competition '
+                                   'mathematics.  Proving the theorems '
+                                   'requires significant problem-solving '
+                                   'ability and proficiency in a broad range '
+                                   'of topics taught in undergraduate '
+                                   'mathematics courses. We evaluate several '
+                                   'established neural and symbolic theorem '
+                                   'provers using PutnamBench. These '
+                                   'approaches can only solve a handful of the '
+                                   'problems, establishing our benchmark as a '
+                                   'difficult open challenge for research on '
+                                   'formal theorem-proving. PutnamBench is '
+                                   'available at '
+                                   'https://github.com/trishullab/PUTNAM.'},
+             'authorids': {'value': ['~George_Tsoukalas1',
+                                     '~Jasper_Lee2',
+                                     '~John_Jennings1',
+                                     '~Jimmy_Xin1',
+                                     '~Michelle_Ding1',
+                                     '~Michael_Jennings1',
+                                     '~Amitayush_Thakur1',
+                                     '~Swarat_Chaudhuri1']},
+             'authors': {'value': ['George Tsoukalas',
+                                   'Jasper Lee',
+                                   'John Jennings',
+                                   'Jimmy Xin',
+                                   'Michelle Ding',
+                                   'Michael Jennings',
+                                   'Amitayush Thakur',
+                                   'Swarat Chaudhuri']},
+             'keywords': {'value': ['theorem proving',
+                                    'automated mathematical reasoning',
+                                    'AI for MATH',
+                                    'Lean 4',
+                                    'Coq',
+                                    'Isabelle']},
+             'paperhash': {'value': 'tsoukalas|putnambench_a_multilingual_competitionmathematics_benchmark_for_formal_theoremproving'},
+             'pdf': {'value': '/pdf/f3aad42fb7a93a0a80417c4bf1486c090f4651a0.pdf'},
+             'title': {'value': 'PutnamBench: A Multilingual '
+                                'Competition-Mathematics Benchmark for Formal '
+                                'Theorem-Proving'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Oral'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'vqW1VRFeVP',
+ 'id': 'vqW1VRFeVP',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission18/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720015209203,
+ 'nonreaders': None,
+ 'number': 18,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956429,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission18/Authors'],
+ 'tcdate': 1717214359060,
+ 'tmdate': 1720015209203,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission18/Authors']}","{'cdate': 1717120848984,
+ 'content': {'_bibtex': {'value': '@inproceedings{\n'
+                                  'setlur2024learning,\n'
+                                  'title={Learning to Reason by Failing: '
+                                  'Offline {RL} on Sub-optimal Rollouts Scales '
+                                  'Synthetic Data by 8x},\n'
+                                  'author={Amrith Setlur and Saurabh Garg and '
+                                  'Xinyang Geng and Naman Garg and Virginia '
+                                  'Smith and Aviral Kumar},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=v2PV1yCFJk}\n'
+                                  '}'},
+             'abstract': {'value': 'Training on model-generated synthetic data '
+                                   'is a promising approach for finetuning '
+                                   'LLMs, but it remains unclear when it helps '
+                                   'or hurts. In this paper, we investigate '
+                                   'this for reasoning problems via an '
+                                   'empirical study, followed by a theoretical '
+                                   'formalization. \n'
+                                   'First, we find that while the typical '
+                                   'approach of finetuning a model on '
+                                   'synthetic correct or *positive* '
+                                   'problem-solution pairs generated by '
+                                   'capable models offers modest performance '
+                                   'gains, sampling more correct solutions '
+                                   'from the finetuned learner **doubles** the '
+                                   'sample efficiency of synthetic data. At '
+                                   'the same time, training on model-generated '
+                                   'positives can amplify  spurious  '
+                                   'correlations, resulting in flat or even '
+                                   'inverse scaling trends as the amount of '
+                                   'data increases. Surprisingly, we find that '
+                                   'several of these issues can be addressed '
+                                   'if we also utilize *negative* responses, '
+                                   '\\ie model-generated responses that are '
+                                   'deemed incorrect via final answer '
+                                   'checking. Crucially, these negatives must '
+                                   'be constructed such that the training can '
+                                   'appropriately recover the utility or '
+                                   'credit of each intermediate step in the '
+                                   'negative response. With this '
+                                   '\\emph{per-step} scheme, we are able to '
+                                   'attain consistent gains over only positive '
+                                   'data, attaining performance similar to '
+                                   'amplifying the amount of synthetic data by '
+                                   '**8x**. We show that training on per-step '
+                                   'negatives can help to unlearn spurious '
+                                   'correlations in the positive data, and is '
+                                   'equivalent to advantage-weighted '
+                                   'reinforcement learning (RL), implying that '
+                                   'it inherits benefits of RL over imitating '
+                                   'positive data alone.'},
+             'authorids': {'value': ['~Amrith_Setlur1',
+                                     '~Saurabh_Garg3',
+                                     '~Xinyang_Geng1',
+                                     '~Naman_Garg1',
+                                     '~Virginia_Smith1',
+                                     '~Aviral_Kumar2']},
+             'authors': {'value': ['Amrith Setlur',
+                                   'Saurabh Garg',
+                                   'Xinyang Geng',
+                                   'Naman Garg',
+                                   'Virginia Smith',
+                                   'Aviral Kumar']},
+             'keywords': {'value': ['synthetic data',
+                                    'large language models',
+                                    'math reasoning',
+                                    'reinforcement learning']},
+             'paperhash': {'value': 'setlur|learning_to_reason_by_failing_offline_rl_on_suboptimal_rollouts_scales_synthetic_data_by_8x'},
+             'pdf': {'value': '/pdf/aa31d8eb1de7fb2f55359bbe2174056de902fe7d.pdf'},
+             'title': {'value': 'Learning to Reason by Failing: Offline RL on '
+                                'Sub-optimal Rollouts Scales Synthetic Data by '
+                                '8x'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'v2PV1yCFJk',
+ 'id': 'v2PV1yCFJk',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1718281956272,
+ 'nonreaders': None,
+ 'number': 12,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956261,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission12/Authors'],
+ 'tcdate': 1717120848984,
+ 'tmdate': 1718281956272,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission12/Authors']}","{'cdate': 1717237167524,
+ 'content': {'_bibtex': {'value': '@inproceedings{\n'
+                                  'nesterov2024leantrace,\n'
+                                  'title={Lean4trace: Data augmentation for '
+                                  'neural theorem proving in Lean},\n'
+                                  'author={Vasilii Nesterov and Yermek '
+                                  'Kapushev and Mikhail Burtsev},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=sjLWmLeJ6R}\n'
+                                  '}'},
+             'abstract': {'value': 'Integrating large language models as proof '
+                                   'assistants with theorem provers has shown '
+                                   'great promise. However, one of the major '
+                                   'challenges in this field is the scarcity '
+                                   'of training data. To address this, we '
+                                   'release a new open-source tool, '
+                                   '*Lean4trace*, for training data extraction '
+                                   'from Lean 4 sources. Unlike previous '
+                                   'approaches, *Lean4trace* is deeply '
+                                   'integrated into the Lean elaborator, '
+                                   'allowing us to modify proofs on-the-fly. '
+                                   'Leveraging this feature, we propose two '
+                                   'methods of data augmentation in Lean: (1) '
+                                   'decomposing composite proof steps into '
+                                   'multiple simpler steps;  (2) testing '
+                                   'existing proof automation tactics at each '
+                                   'proof state and collecting the successful '
+                                   'ones. Models trained on this augmented '
+                                   'data are capable of proving 58.0% of '
+                                   'theorems from a hold-out subset of Mathlib '
+                                   'and 35.6% of the test subset of the '
+                                   'MiniF2F benchmark.'},
+             'authorids': {'value': ['~Vasilii_Nesterov1',
+                                     '~Yermek_Kapushev1',
+                                     '~Mikhail_Burtsev1']},
+             'authors': {'value': ['Vasilii Nesterov',
+                                   'Yermek Kapushev',
+                                   'Mikhail Burtsev']},
+             'keywords': {'value': ['Theorem Proving',
+                                    'Automated theorem proving',
+                                    'Data augmentation',
+                                    'AI for math']},
+             'paperhash': {'value': 'nesterov|lean4trace_data_augmentation_for_neural_theorem_proving_in_lean'},
+             'pdf': {'value': '/pdf/7bc6e168a9fe100095a13b5221a503d8d173f3ab.pdf'},
+             'title': {'value': 'Lean4trace: Data augmentation for neural '
+                                'theorem proving in Lean'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'sjLWmLeJ6R',
+ 'id': 'sjLWmLeJ6R',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission25/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720408674960,
+ 'nonreaders': None,
+ 'number': 25,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956693,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission25/Authors'],
+ 'tcdate': 1717237167524,
+ 'tmdate': 1720408674960,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission25/Authors']}","{'cdate': 1717225982792,
+ 'content': {'TLDR': {'value': 'A novel, efficient transformer-based approach '
+                               'to solving small linear systems.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'vladymyrov2024efficient,\n'
+                                  'title={Efficient Linear System Solver with '
+                                  'Transformers},\n'
+                                  'author={Max Vladymyrov and Johannes von '
+                                  'Oswald and Nolan Andrew Miller and Mark '
+                                  'Sandler},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=qc2adlhAWF}\n'
+                                  '}'},
+             'abstract': {'value': 'This paper investigates the potential of '
+                                   'linear Transformers as solvers for systems '
+                                   'of linear equations. We propose a novel '
+                                   'approach where the Transformer encodes '
+                                   'each equation as a separate token, '
+                                   'allowing the model to process the system '
+                                   'in a permutation-invariant manner. To '
+                                   'enhance generalizability and reduce the '
+                                   'parameter count, we introduce a block-wise '
+                                   're-parameterization technique for the '
+                                   'attention weight matrices. This technique '
+                                   'decouples the problem dimension from the '
+                                   ""model's parameter count, enabling the ""
+                                   'Transformer to effectively handle systems '
+                                   'of varying sizes. Our experiments '
+                                   ""demonstrate the Transformer's competitive ""
+                                   'performance compared to established '
+                                   'classical methods such as Conjugate '
+                                   'Gradient, especially for systems with '
+                                   'smaller sizes. We further explore the '
+                                   ""model's ability to extrapolate to larger ""
+                                   'systems, providing evidence for its '
+                                   'potential as a versatile and efficient '
+                                   'solver for linear equations.'},
+             'authorids': {'value': ['~Max_Vladymyrov1',
+                                     '~Johannes_von_Oswald2',
+                                     '~Nolan_Andrew_Miller1',
+                                     '~Mark_Sandler1']},
+             'authors': {'value': ['Max Vladymyrov',
+                                   'Johannes von Oswald',
+                                   'Nolan Andrew Miller',
+                                   'Mark Sandler']},
+             'keywords': {'value': ['linear attention',
+                                    'numerical methods',
+                                    'linear system of equations']},
+             'paperhash': {'value': 'vladymyrov|efficient_linear_system_solver_with_transformers'},
+             'pdf': {'value': '/pdf/70ff41de083363020856e5381537edb482990dd0.pdf'},
+             'title': {'value': 'Efficient Linear System Solver with '
+                                'Transformers'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'qc2adlhAWF',
+ 'id': 'qc2adlhAWF',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission22/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1747068377985,
+ 'nonreaders': None,
+ 'number': 22,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956544,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission22/Authors'],
+ 'tcdate': 1717225982792,
+ 'tmdate': 1747068377985,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission22/Authors']}","{'cdate': 1716384005380,
+ 'content': {'TLDR': {'value': 'Unleash inherent capabilities of LLMs to '
+                               'detect and rectify incorrect responses without '
+                               'external feedback.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'wu2024large,\n'
+                                  'title={Large Language Models Can '
+                                  'Self-Correct with Minimal Effort},\n'
+                                  'author={Zhenyu Wu and Qingkai Zeng and '
+                                  'Zhihan Zhang and Zhaoxuan Tan and Chao Shen '
+                                  'and Meng Jiang},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=mmZLMs4l3d}\n'
+                                  '}'},
+             'abstract': {'value': 'Intrinsic self-correct was a method that '
+                                   'instructed large language models (LLMs) to '
+                                   'verify and correct their responses without '
+                                   'external feedback. Unfortunately, the '
+                                   'study concluded that the LLMs could not '
+                                   'self-correct reasoning yet. We find that a '
+                                   'simple yet effective verification method '
+                                   'can unleash inherent capabilities of the '
+                                   'LLMs. That is to mask a key condition in '
+                                   'the question, add the current response to '
+                                   'construct a verification question, and '
+                                   'predict the condition to verify the '
+                                   'response. The condition can be an entity '
+                                   'in an open-domain question or a numeric '
+                                   'value in a math question, which requires '
+                                   'minimal effort (via prompting) to '
+                                   'identify. We propose an iterative '
+                                   'verify-then-correct framework to '
+                                   'progressively identify and correct '
+                                   '(probably) false responses, named ProCo. '
+                                   'We conduct experiments on three reasoning '
+                                   'tasks. On average, ProCo, with '
+                                   'GPT-3.5-Turbo as the backend LLM, yields '
+                                   '$+6.8$ exact match on four open-domain '
+                                   'question answering datasets, $+14.1$ '
+                                   'accuracy on three arithmetic reasoning '
+                                   'datasets, and $+9.6$ accuracy on a '
+                                   'commonsense reasoning dataset, compared to '
+                                   'Self-Correct.'},
+             'authorids': {'value': ['~Zhenyu_Wu9',
+                                     '~Qingkai_Zeng2',
+                                     '~Zhihan_Zhang2',
+                                     '~Zhaoxuan_Tan1',
+                                     '~Chao_Shen2',
+                                     '~Meng_Jiang3']},
+             'authors': {'value': ['Zhenyu Wu',
+                                   'Qingkai Zeng',
+                                   'Zhihan Zhang',
+                                   'Zhaoxuan Tan',
+                                   'Chao Shen',
+                                   'Meng Jiang']},
+             'keywords': {'value': ['Self-Correct',
+                                    'Multi-step Reasoning',
+                                    'Prompting',
+                                    'Chain-of-Thought',
+                                    'Large Language Models']},
+             'paperhash': {'value': 'wu|large_language_models_can_selfcorrect_with_minimal_effort'},
+             'pdf': {'value': '/pdf/0afed850bcc759f25fe19106cf23af0f53a7d57d.pdf'},
+             'title': {'value': 'Large Language Models Can Self-Correct with '
+                                'Minimal Effort'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'mmZLMs4l3d',
+ 'id': 'mmZLMs4l3d',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission4/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1735640604330,
+ 'nonreaders': None,
+ 'number': 4,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281955887,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission4/Authors'],
+ 'tcdate': 1716384005380,
+ 'tmdate': 1735640604330,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission4/Authors']}","{'cdate': 1717170263404,
+ 'content': {'TLDR': {'value': 'We compare the performance of multiple RL '
+                               'algorithms across multiple setups for '
+                               'improving LLM reasoning'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'havrilla2024teaching,\n'
+                                  'title={Teaching Large Language Models to '
+                                  'Reason with Reinforcement Learning},\n'
+                                  'author={Alexander Havrilla and Yuqing Du '
+                                  'and Sharath Chandra Raparthy and '
+                                  'Christoforos Nalmpantis and Jane Dwivedi-Yu '
+                                  'and Eric Hambro and Sainbayar Sukhbaatar '
+                                  'and Roberta Raileanu},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=mjqoceuMnI}\n'
+                                  '}'},
+             'abstract': {'value': 'Reinforcement Learning from Human Feedback '
+                                   '(\\textbf{RLHF}) has emerged as a dominant '
+                                   'approach for aligning LLM outputs with '
+                                   'human preferences. Inspired by the success '
+                                   'of RLHF, we study the performance of '
+                                   'multiple algorithms that learn from '
+                                   'feedback (Expert Iteration, Proximal '
+                                   'Policy Optimization (\\textbf{PPO}), '
+                                   'Return-Conditioned RL) on improving LLM '
+                                   'reasoning capabilities. We investigate '
+                                   'both sparse and dense rewards provided to '
+                                   'the LLM both heuristically and via a '
+                                   'learned reward model. We additionally '
+                                   'start from multiple initializations with '
+                                   'and without supervised fine-tuning '
+                                   '(\\textbf{SFT}) data.  Overall, we find '
+                                   'models fine-tuned with Expert Iteration to '
+                                   'consistently achieve the highest task '
+                                   'accuracy with PPO and RCRL close behind. '
+                                   'Surprisingly, the sample complexity of '
+                                   'Expert Iteration is similar to that of '
+                                   'PPO, requiring at most on the order of '
+                                   '$10^6$ samples to converge from a '
+                                   'pretrained checkpoint. We investigate why '
+                                   'this is the case, concluding that during '
+                                   'RL training models fail to explore '
+                                   'significantly beyond solutions already '
+                                   'produced by SFT models. Additionally, we '
+                                   'discuss a trade off between maj@1 and '
+                                   'pass@96 metric performance during SFT '
+                                   'training and how conversely RL training '
+                                   'improves both simultaneously. We then '
+                                   'conclude by discussing the implications of '
+                                   'our findings for RLHF and the future role '
+                                   'of RL in LLM fine-tuning.'},
+             'authorids': {'value': ['~Alexander_Havrilla2',
+                                     '~Yuqing_Du1',
+                                     '~Sharath_Chandra_Raparthy3',
+                                     '~Christoforos_Nalmpantis1',
+                                     '~Jane_Dwivedi-Yu1',
+                                     '~Eric_Hambro1',
+                                     '~Sainbayar_Sukhbaatar1',
+                                     '~Roberta_Raileanu2']},
+             'authors': {'value': ['Alexander Havrilla',
+                                   'Yuqing Du',
+                                   'Sharath Chandra Raparthy',
+                                   'Christoforos Nalmpantis',
+                                   'Jane Dwivedi-Yu',
+                                   'Eric Hambro',
+                                   'Sainbayar Sukhbaatar',
+                                   'Roberta Raileanu']},
+             'keywords': {'value': ['Reasoning', 'RL', 'LLM']},
+             'paperhash': {'value': 'havrilla|teaching_large_language_models_to_reason_with_reinforcement_learning'},
+             'pdf': {'value': '/pdf/8b3bf32d71f7ec91ebdcfd798094623345755e15.pdf'},
+             'title': {'value': 'Teaching Large Language Models to Reason with '
+                                'Reinforcement Learning'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'mjqoceuMnI',
+ 'id': 'mjqoceuMnI',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1721010776551,
+ 'nonreaders': None,
+ 'number': 16,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956363,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission16/Authors'],
+ 'tcdate': 1717170263404,
+ 'tmdate': 1721010776551,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission16/Authors']}","{'cdate': 1717118727268,
+ 'content': {'_bibtex': {'value': '@inproceedings{\n'
+                                  'hashimoto2024ai,\n'
+                                  'title={{AI} for an inverse problem: '
+                                  'Physical model solving quantum gravity},\n'
+                                  'author={Koji Hashimoto and Koshiro Matsuo '
+                                  'and Masaki Murata and Gakuto Ogiwara and '
+                                  'Daichi Takeda},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=cYUES8tIVM}\n'
+                                  '}'},
+             'abstract': {'value': 'Mathematical inverse problems of '
+                                   'determining a governing differential '
+                                   'equation for given solution data remain a '
+                                   'fundamental challenge.\n'
+                                   'To find a working example of AI for math, '
+                                   'we provide a concrete example using a '
+                                   'physical setup of a quantum gravity '
+                                   'problem.\n'
+                                   'We present a novel sparse Neural Network '
+                                   '(NN) model which is interpretable, to '
+                                   'solve the inverse problem: the AdS/CFT '
+                                   'correspondence.\n'
+                                   'According to the conjectured '
+                                   'correspondence, a special condensed matter '
+                                   'system on a ring is equivalent to a '
+                                   'gravity system on a bulk disk. The inverse '
+                                   'problem is to reconstruct the '
+                                   'higher-dimensional gravity metric from the '
+                                   'data of the condensed matter system. \n'
+                                   'We use the response functions of a '
+                                   'condensed matter system as our data, and \n'
+                                   'by supervised machine learning, we '
+                                   'successfully train the neural network '
+                                   'which is equivalent to a scalar field '
+                                   'equation on an emergent geometry of the '
+                                   'bulk spacetime. \n'
+                                   'The developed method may work as a ground '
+                                   'for generic bulk reconstruction, i.e. a '
+                                   'solution to the inverse problem of the '
+                                   'AdS/CFT correspondence.\n'
+                                   'From a technical perspective, to achieve '
+                                   'better numerical control, our neural '
+                                   'network model incorporates a novel layer '
+                                   'that implements the Runge-Kutta method.'},
+             'authorids': {'value': ['~Koji_Hashimoto1',
+                                     '~Koshiro_Matsuo1',
+                                     '~Masaki_Murata2',
+                                     '~Gakuto_Ogiwara1',
+                                     'takedai@gauge.scphys.kyoto-u.ac.jp']},
+             'authors': {'value': ['Koji Hashimoto',
+                                   'Koshiro Matsuo',
+                                   'Masaki Murata',
+                                   'Gakuto Ogiwara',
+                                   'Daichi Takeda']},
+             'keywords': {'value': ['Machine Learning',
+                                    'ICML',
+                                    'AdS/CFT',
+                                    'Runge-Kutta Method']},
+             'paperhash': {'value': 'hashimoto|ai_for_an_inverse_problem_physical_model_solving_quantum_gravity'},
+             'pdf': {'value': '/pdf/1843f03c96256409a143dfdb23c8318c0813895d.pdf'},
+             'title': {'value': 'AI for an inverse problem: Physical model '
+                                'solving quantum gravity'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'cYUES8tIVM',
+ 'id': 'cYUES8tIVM',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission11/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720010093739,
+ 'nonreaders': None,
+ 'number': 11,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956214,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission11/Authors'],
+ 'tcdate': 1717118727268,
+ 'tmdate': 1720010093739,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission11/Authors']}","{'cdate': 1717166792579,
+ 'content': {'TLDR': {'value': 'We study how including the output of formal '
+                               'methods tools in LLM prompts can affect '
+                               'specification synthesis.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'granberry2024specify,\n'
+                                  'title={Specify What? A Case-Study using '
+                                  '{GPT}-4 and Formal Methods For '
+                                  'Specification Synthesis},\n'
+                                  'author={George Granberry and Wolfgang '
+                                  'Ahrendt and Moa Johansson},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=ZRTcPkNl7v}\n'
+                                  '}'},
+             'abstract': {'value': 'Formal specifications are supposed to '
+                                   'unambigu-\n'
+                                   'ously describe the behaviour of (parts of) '
+                                   'pro-\n'
+                                   'grams and are usually provided as extra '
+                                   'annota-\n'
+                                   'tions of the program code. The intention '
+                                   'is both\n'
+                                   'to document the code and to be able to '
+                                   'automati-\n'
+                                   'cally check compliance of programs using '
+                                   'formal\n'
+                                   'methods tools. Writing good specifications '
+                                   'can\n'
+                                   'however be both difficult and '
+                                   'time-consuming for\n'
+                                   'the programmer. In this case-study, we '
+                                   'investigate\n'
+                                   'how GPT-4 can help with the task. We '
+                                   'propose\n'
+                                   'a neuro-symbolic integration, by which we '
+                                   'aug-\n'
+                                   'ment the LLM prompts with outputs from '
+                                   'two\n'
+                                   'formal methods tools in the Frama-C '
+                                   'ecosystem\n'
+                                   '(Pathcrawler and EVA), and produce C '
+                                   'program\n'
+                                   'annotations in the specifications language '
+                                   'ACSL.\n'
+                                   'We demonstrate how this impacts the '
+                                   'quality of\n'
+                                   'annotations: information about '
+                                   'input/output ex-\n'
+                                   'amples from Pathcrawler produce more '
+                                   'context-\n'
+                                   'aware annotations, while the inclusion of '
+                                   'EVA\n'
+                                   'reports yields annotations more attuned to '
+                                   'run-\n'
+                                   'time errors.'},
+             'authorids': {'value': ['~George_Granberry1',
+                                     'ahrendt@chalmers.se',
+                                     '~Moa_Johansson1']},
+             'authors': {'value': ['George Granberry',
+                                   'Wolfgang Ahrendt',
+                                   'Moa Johansson']},
+             'keywords': {'value': ['Specification',
+                                    'Synthesis',
+                                    'Formal Methods',
+                                    'LLM']},
+             'paperhash': {'value': 'granberry|specify_what_a_casestudy_using_gpt4_and_formal_methods_for_specification_synthesis'},
+             'pdf': {'value': '/pdf/92d4eaa2df1188934d60f18bffc337a55e590e99.pdf'},
+             'title': {'value': 'Specify What? A Case-Study using GPT-4 and '
+                                'Formal Methods For Specification Synthesis'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'ZRTcPkNl7v',
+ 'id': 'ZRTcPkNl7v',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission15/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1721010880801,
+ 'nonreaders': None,
+ 'number': 15,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956339,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission15/Authors'],
+ 'tcdate': 1717166792579,
+ 'tmdate': 1721010880801,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission15/Authors']}","{'cdate': 1717019144728,
+ 'content': {'TLDR': {'value': 'We introduce DACO, a dataset for data '
+                               'analysis, containing (1) 440 databases of '
+                               'tabular data, (2) 2k automatically generated '
+                               'query-answer pairs that can serve as weak '
+                               'supervision for model training, and (3) a '
+                               'manually refined test set for evaluation.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'wu2024daco,\n'
+                                  'title={{DACO}: Towards Application-Driven '
+                                  'and Comprehensive Data Analysis via Code '
+                                  'Generation},\n'
+                                  'author={Xueqing Wu and Rui Zheng and '
+                                  'Jingzhen Sha and Te-Lin Wu and Hanyu Zhou '
+                                  'and Tang Mohan and Kai-Wei Chang and Nanyun '
+                                  'Peng and Haoran Huang},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=Y5iTZ52yFs}\n'
+                                  '}'},
+             'abstract': {'value': 'Data analysis is a crucial analytical '
+                                   'process to generate in-depth studies and '
+                                   'conclusive insights to comprehensively '
+                                   'answer a given user query for tabular '
+                                   'data. In this work, we aim to propose new '
+                                   'resources and benchmarks to inspire future '
+                                   'research on this crucial yet challenging '
+                                   'and under-explored task. However, '
+                                   'collecting data analysis annotations '
+                                   'curated by experts can be prohibitively '
+                                   'expensive. We propose to automatically '
+                                   'generate high-quality answer annotations '
+                                   'leveraging the code-generation '
+                                   'capabilities of LLMs with a multi-turn '
+                                   'prompting technique. We construct the '
+                                   '**DACO dataset**, containing (1) 440 '
+                                   'databases (of tabular data) collected from '
+                                   'real-world scenarios, (2) ~2k query-answer '
+                                   'pairs that can serve as weak supervision '
+                                   'for model training, and (3) a concentrated '
+                                   'but high-quality test set with human '
+                                   'refined annotations that serves as our '
+                                   'main evaluation benchmark. We train a 6B '
+                                   'supervised fine-tuning (SFT) model on DACO '
+                                   'dataset, and find that the SFT model '
+                                   'learns reasonable data analysis '
+                                   'capabilities. To further align the models '
+                                   'with human preference, we use '
+                                   'reinforcement learning to encourage '
+                                   'generating analysis perceived by human as '
+                                   'helpful, and design a set of dense rewards '
+                                   'to propagate the sparse human preference '
+                                   'reward to intermediate code generation '
+                                   'steps. Our DACO-RL algorithm is evaluated '
+                                   'by human annotators to produce more '
+                                   'helpful answers than SFT model in 57.72% '
+                                   'cases, validating the effectiveness of our '
+                                   'proposed algorithm.'},
+             'authorids': {'value': ['~Xueqing_Wu1',
+                                     '~Rui_Zheng1',
+                                     '~Jingzhen_Sha1',
+                                     '~Te-Lin_Wu1',
+                                     '~Hanyu_Zhou3',
+                                     '~Tang_Mohan1',
+                                     '~Kai-Wei_Chang1',
+                                     '~Nanyun_Peng1',
+                                     '~Haoran_Huang1']},
+             'authors': {'value': ['Xueqing Wu',
+                                   'Rui Zheng',
+                                   'Jingzhen Sha',
+                                   'Te-Lin Wu',
+                                   'Hanyu Zhou',
+                                   'Tang Mohan',
+                                   'Kai-Wei Chang',
+                                   'Nanyun Peng',
+                                   'Haoran Huang']},
+             'keywords': {'value': ['data analysis',
+                                    'tabular data',
+                                    'code generation']},
+             'paperhash': {'value': 'wu|daco_towards_applicationdriven_and_comprehensive_data_analysis_via_code_generation'},
+             'pdf': {'value': '/pdf/46caee17a170a1a8ce500d42f3be4659ebc8f34b.pdf'},
+             'title': {'value': 'DACO: Towards Application-Driven and '
+                                'Comprehensive Data Analysis via Code '
+                                'Generation'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'Y5iTZ52yFs',
+ 'id': 'Y5iTZ52yFs',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1719999763115,
+ 'nonreaders': None,
+ 'number': 8,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956069,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission8/Authors'],
+ 'tcdate': 1717019144728,
+ 'tmdate': 1719999763115,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission8/Authors']}","{'cdate': 1713398591312,
+ 'content': {'TLDR': {'value': 'In this work we develop AI-generated benchmark '
+                               ""for the distillation of LLMs' decomposition ""
+                               'abilities into smaller models and provide '
+                               'multiple baselines'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'tarasov2024distilling,\n'
+                                  'title={Distilling {LLM}s{\\textquoteright} '
+                                  'Decomposition Abilities into Compact '
+                                  'Language Models},\n'
+                                  'author={Denis Tarasov and Kumar Shridhar},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=XM44SZM3VO}\n'
+                                  '}'},
+             'abstract': {'value': 'Large Language Models (LLMs) have '
+                                   'demonstrated proficiency in their '
+                                   'reasoning abilities, yet their large size '
+                                   'presents scalability challenges and limits '
+                                   'any further customization. In contrast, '
+                                   'compact models offer customized training '
+                                   'but often fall short in solving complex '
+                                   'reasoning tasks. This study focuses on '
+                                   ""distilling the LLMs' decomposition skills ""
+                                   'into compact models using offline '
+                                   'reinforcement learning. We leverage the '
+                                   'advancements in the LLM`s capabilities to '
+                                   'provide feedback and generate a '
+                                   'specialized task-specific dataset for '
+                                   'training compact models. The development '
+                                   'of an AI-generated dataset and the '
+                                   'establishment of baselines constitute the '
+                                   'primary contributions of our work, '
+                                   'underscoring the potential of compact '
+                                   'models in replicating complex '
+                                   'problem-solving skills.'},
+             'authorids': {'value': ['~Denis_Tarasov1', '~Kumar_Shridhar1']},
+             'authors': {'value': ['Denis Tarasov', 'Kumar Shridhar']},
+             'keywords': {'value': ['reasoning',
+                                    'reinforcement learning',
+                                    'dataset',
+                                    'benchmark']},
+             'paperhash': {'value': 'tarasov|distilling_llms_decomposition_abilities_into_compact_language_models'},
+             'pdf': {'value': '/pdf/b5ceba0148c6dcdfa3dd15ada8c3e29bc88ec2c8.pdf'},
+             'title': {'value': 'Distilling LLMs’ Decomposition Abilities into '
+                                'Compact Language Models'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'XM44SZM3VO',
+ 'id': 'XM44SZM3VO',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission2/-/Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1719559827201,
+ 'nonreaders': None,
+ 'number': 2,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281955885,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission2/Authors'],
+ 'tcdate': 1713398591312,
+ 'tmdate': 1719559827201,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission2/Authors']}","{'cdate': 1716623053526,
+ 'content': {'TLDR': {'value': 'We propose a new prompting strategy, '
+                               'Progressive-Hint Promoting, that can be easily '
+                               'combined with Chain-Of-Thought and '
+                               'Self-Consistency to improve performance.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'zheng2024progressivehint,\n'
+                                  'title={Progressive-Hint Prompting Improves '
+                                  'Reasoning in Large Language Models},\n'
+                                  'author={Chuanyang Zheng and Zhengying Liu '
+                                  'and Enze Xie and Zhenguo Li and Yu Li},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=UkFEs3ciz8}\n'
+                                  '}'},
+             'abstract': {'value': 'The performance of Large Language Models '
+                                   '(LLMs) in reasoning tasks depends heavily '
+                                   'on prompt design, with Chain-of-Thought '
+                                   '(CoT) and self-consistency being critical '
+                                   'methods that en- hance this ability. '
+                                   'However, these methods do not fully '
+                                   'exploit the answers generated by the LLM '
+                                   'to guide subsequent responses. This paper '
+                                   'proposes a new prompting method, named '
+                                   'Progressive-Hint Prompting (PHP), that '
+                                   'enables automatic mul- tiple interactions '
+                                   'between users and LLMs by using previously '
+                                   'generated answers as hints to '
+                                   'progressively guide toward the correct '
+                                   'answers. PHP is orthogonal to CoT and '
+                                   'self-consistency, making it easy to '
+                                   'combine with state-of-the-art techniques '
+                                   'to further improve performance. We '
+                                   'conducted extensive and comprehensive '
+                                   'experi- ments on seven benchmarks. The '
+                                   'results show that PHP significantly '
+                                   'improves accuracy while remaining highly '
+                                   'efficient. For instance, with text- '
+                                   'davinci-003, we observed a 4.2% '
+                                   'improvement on GSM8K with greedy decoding '
+                                   'compared to Complex CoT, and a 46.17% '
+                                   'reduction in sam- ple paths with '
+                                   'self-consistency. With GPT-4 and PHP, we '
+                                   'achieve state-of-the-art performances on '
+                                   'SVAMP (89.1% → 91.9%), GSM8K (92% → '
+                                   '95.5%), AQuA (76.4% → 79.9%) and MATH '
+                                   '(50.3% → 53.9%).'},
+             'authorids': {'value': ['~Chuanyang_Zheng3',
+                                     '~Zhengying_Liu2',
+                                     '~Enze_Xie1',
+                                     '~Zhenguo_Li1',
+                                     '~Yu_Li1']},
+             'authors': {'value': ['Chuanyang Zheng',
+                                   'Zhengying Liu',
+                                   'Enze Xie',
+                                   'Zhenguo Li',
+                                   'Yu Li']},
+             'keywords': {'value': ['Language models',
+                                    'natural language processing',
+                                    'reasoning']},
+             'paperhash': {'value': 'zheng|progressivehint_prompting_improves_reasoning_in_large_language_models'},
+             'pdf': {'value': '/pdf/e6106df113d9ae7f3ed2d023ebc8c8f9d8c3a3f5.pdf'},
+             'title': {'value': 'Progressive-Hint Prompting Improves Reasoning '
+                                'in Large Language Models'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'UkFEs3ciz8',
+ 'id': 'UkFEs3ciz8',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission6/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1719996197295,
+ 'nonreaders': None,
+ 'number': 6,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956066,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission6/Authors'],
+ 'tcdate': 1716623053526,
+ 'tmdate': 1719996197295,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission6/Authors']}","{'cdate': 1717059212137,
+ 'content': {'TLDR': {'value': 'Study evaluates 7B LLaMA, Code Llama and '
+                               'Mistral on math word problems, introduces '
+                               '""Unit Consistency Programs"" for multi-unit '
+                               'challenges, and reports initial results with '
+                               'the enhanced ""VerityMath"" model.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'han2024veritymath,\n'
+                                  'title={VerityMath: Advancing Mathematical '
+                                  'Reasoning by Self-Verification Through Unit '
+                                  'Consistency},\n'
+                                  'author={Vernon Toh Yan Han and Ratish '
+                                  'Puduppully and Nancy F. Chen},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=S9utaRXaZt}\n'
+                                  '}'},
+             'abstract': {'value': 'Large Language Models (LLMs), combined '
+                                   'with program-based solving techniques, are '
+                                   'increasingly demonstrating proficiency in '
+                                   'mathematical reasoning. For example, '
+                                   'closed-source models such as OpenAI GPT-4 '
+                                   'and Claude show excellent results in '
+                                   'solving math word problems. However, '
+                                   'progress in math word problem-solving for '
+                                   'open-source LLMs is limited, and the '
+                                   'challenges these models face are not '
+                                   'well-studied. In this paper, we study the '
+                                   'performance of strong open-source LLMs, '
+                                   'including Llama 2 (7B), Code Llama (7B), '
+                                   'and Mistral (7B) on math word problems '
+                                   'using program-based solving techniques. '
+                                   'Specifically, we analyze the outputs of '
+                                   'these models when applied to math word '
+                                   'problems and identify a category of '
+                                   'problems that pose a significant '
+                                   'challenge, particularly those involving '
+                                   'quantities spanning multiple units. To '
+                                   'address this issue, we propose a '
+                                   'systematic approach by defining the units '
+                                   'for each quantity and ensuring the '
+                                   'consistency of these units during '
+                                   'mathematical operations. We developed Unit '
+                                   'Consistency Programs (UCPs), an annotated '
+                                   'dataset of math word problems, each paired '
+                                   'with programs containing unit '
+                                   'specifications and unit verification '
+                                   'routines. We fine-tuned Llama 2 (7B), Code '
+                                   'Llama (7B), and Mistral (7B) models with '
+                                   'UCPs to produce their VerityMath variants. '
+                                   'Our findings indicate that our approach, '
+                                   'which incorporates unit consistency, '
+                                   'currently slightly underperforms compared '
+                                   'to an approach that does not. To '
+                                   'understand the reasons behind this, we '
+                                   'conducted an in-depth error analysis and '
+                                   'suggested options for future '
+                                   'improvements.'},
+             'authorids': {'value': ['~Vernon_Toh_Yan_Han1',
+                                     '~Ratish_Puduppully1',
+                                     '~Nancy_F._Chen1']},
+             'authors': {'value': ['Vernon Toh Yan Han',
+                                   'Ratish Puduppully',
+                                   'Nancy F. Chen']},
+             'keywords': {'value': ['math word problem solving',
+                                    'python programs',
+                                    'dataset']},
+             'paperhash': {'value': 'han|veritymath_advancing_mathematical_reasoning_by_selfverification_through_unit_consistency'},
+             'pdf': {'value': '/pdf/2e116b08e4c0d273b422594f60a3c16662b3d034.pdf'},
+             'title': {'value': 'VerityMath: Advancing Mathematical Reasoning '
+                                'by Self-Verification Through Unit '
+                                'Consistency'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'S9utaRXaZt',
+ 'id': 'S9utaRXaZt',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission9/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720003041818,
+ 'nonreaders': None,
+ 'number': 9,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956183,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission9/Authors'],
+ 'tcdate': 1717059212137,
+ 'tmdate': 1720003041818,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission9/Authors']}","{'cdate': 1717209509379,
+ 'content': {'TLDR': {'value': 'Deep learning innovations led to improvement '
+                               'in reasoning ability of vision-language '
+                               'models.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'roberts2024smart,\n'
+                                  'title={Smart Vision-Language Reasoners},\n'
+                                  'author={Denisa Roberts and Lucas Roberts},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=Mf6ot5U7ni}\n'
+                                  '}'},
+             'abstract': {'value': 'In this article, we investigate '
+                                   'vision-language models (VLM) as reasoners. '
+                                   'The ability to form abstractions underlies '
+                                   'mathematical reasoning, problem-solving, '
+                                   'and other Math AI tasks. Several '
+                                   'formalisms have been given to these '
+                                   'underlying abstractions and skills '
+                                   'utilized by humans and intelligent systems '
+                                   'for reasoning. Furthermore, human '
+                                   'reasoning is inherently multimodal, and as '
+                                   'such, we focus our investigations on '
+                                   'multimodal AI. In this article, we employ '
+                                   'the abstractions given in the SMART task '
+                                   '(Simple Multimodal Algorithmic Reasoning '
+                                   'Task) introduced in '
+                                   '\\cite{cherian2022deep} as meta-reasoning '
+                                   'and problem-solving skills along eight '
+                                   'axes: math, counting, path, measure, '
+                                   'logic, spatial, and pattern. We '
+                                   'investigate the ability of vision-language '
+                                   'models to reason along these axes and seek '
+                                   'avenues of improvement. Including '
+                                   'composite representations with '
+                                   'vision-language cross-attention enabled '
+                                   'learning multimodal representations '
+                                   'adaptively from fused frozen pretrained '
+                                   'backbones for better visual grounding. '
+                                   'Furthermore, proper hyperparameter and '
+                                   'other training choices led to strong '
+                                   'improvements (up to $48\\%$ gain in '
+                                   'accuracy) on the SMART task, further '
+                                   'underscoring the power of deep multimodal '
+                                   'learning. The smartest VLM, which includes '
+                                   'a novel QF multimodal layer, improves upon '
+                                   'the best previous baselines in every one '
+                                   'of the eight fundamental reasoning skills. '
+                                   'End-to-end code is available at '
+                                   '\\href{https://github.com/D-Roberts/smarter}{github.com/D-Roberts/smarter}.'},
+             'authorids': {'value': ['~Denisa_Roberts1', '~Lucas_Roberts1']},
+             'authors': {'value': ['Denisa Roberts', 'Lucas Roberts']},
+             'keywords': {'value': ['Reasoning',
+                                    'Vision-Language',
+                                    'Deep Learning',
+                                    'Neural Networks']},
+             'paperhash': {'value': 'roberts|smart_visionlanguage_reasoners'},
+             'pdf': {'value': '/pdf/e71382c2b2bdd9fa5eaeae740459879c5613a036.pdf'},
+             'title': {'value': 'Smart Vision-Language Reasoners'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'Mf6ot5U7ni',
+ 'id': 'Mf6ot5U7ni',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission17/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720076036360,
+ 'nonreaders': None,
+ 'number': 17,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956395,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission17/Authors'],
+ 'tcdate': 1717209509379,
+ 'tmdate': 1720076036360,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission17/Authors']}","{'cdate': 1717228546406,
+ 'content': {'TLDR': {'value': 'A comprehensive evaluative framework to '
+                               'scrutinize the underlying mechanisms and '
+                               'outcomes of post-training self-improvement.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'wu2024progress,\n'
+                                  'title={Progress or Regress? '
+                                  'Self-Improvement Reversal in '
+                                  'Post-training},\n'
+                                  'author={Ting Wu and Xuefeng Li and Pengfei '
+                                  'Liu},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=MG18DR2dAN}\n'
+                                  '}'},
+             'abstract': {'value': 'Self-improvement through post-training '
+                                   'methods such as iterative preference '
+                                   'learning has been acclaimed for enhancing '
+                                   'the problem-solving capabilities~(e.g., '
+                                   'mathematical reasoning) of Large Language '
+                                   'Models~(LLMs) without human intervention. '
+                                   'However, as exploration deepens, it '
+                                   'becomes crucial to assess whether these '
+                                   'improvements genuinely signify progress in '
+                                   'solving more challenging problems or if '
+                                   'they could lead to unintended regressions. '
+                                   'To address this, we propose a '
+                                   'comprehensive evaluative framework that '
+                                   'goes beyond the superficial pass@1 metric '
+                                   'to scrutinize the underlying enhancements '
+                                   'of post-training paradigms for '
+                                   'self-improvement. Through rigorous '
+                                   'experimentation and analysis across '
+                                   'diverse problem-solving tasks, the '
+                                   'empirical results point out the phenomenon '
+                                   'of \\emph{self-improvement reversal}, '
+                                   'where models showing improved performance '
+                                   'across benchmarks will paradoxically '
+                                   'exhibit declines in broader, essential '
+                                   'capabilities, like output diversity and '
+                                   'out-of-distribution~(OOD) generalization. '
+                                   'These findings indicate that current '
+                                   'self-improvement practices through '
+                                   'post-training are inadequate for equipping '
+                                   'models to tackle more complex problems. '
+                                   'Furthermore, they underscore the necessity '
+                                   'of our critical evaluation metrics in '
+                                   'discerning the \\emph{progress or regress} '
+                                   'dichotomy for self-improving LLMs.'},
+             'authorids': {'value': ['~Ting_Wu2',
+                                     '~Xuefeng_Li6',
+                                     '~Pengfei_Liu1']},
+             'authors': {'value': ['Ting Wu', 'Xuefeng Li', 'Pengfei Liu']},
+             'keywords': {'value': ['Large Language Model',
+                                    'Self-improvement',
+                                    'Evaluation']},
+             'paperhash': {'value': 'wu|progress_or_regress_selfimprovement_reversal_in_posttraining'},
+             'pdf': {'value': '/pdf/2fb1e8e4e7c044ab018b903eb62e5ffdb089546a.pdf'},
+             'title': {'value': 'Progress or Regress? Self-Improvement '
+                                'Reversal in Post-training'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Oral'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'MG18DR2dAN',
+ 'id': 'MG18DR2dAN',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission23/-/Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1719559827556,
+ 'nonreaders': None,
+ 'number': 23,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956645,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission23/Authors'],
+ 'tcdate': 1717228546406,
+ 'tmdate': 1719559827556,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission23/Authors']}","{'cdate': 1717220072927,
+ 'content': {'TLDR': {'value': 'We propose Pre-Calc, our method to teach '
+                               'smaller language models how to use '
+                               'calculators. By pre-finetuning BERT, RoBERTa, '
+                               'and Flan-T5 on calculator use tasks, we '
+                               ""improved these models' performance on tasks ""
+                               'requiring numerical understanding.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'veerendranath2024precalc,\n'
+                                  'title={Pre-Calc: Learning to Use the '
+                                  'Calculator Improves Numeracy in Language '
+                                  'Models},\n'
+                                  'author={Vishruth Veerendranath and Vishwa '
+                                  'Shah and Kshitish Ghate},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=Hb5gA02FyR}\n'
+                                  '}'},
+             'abstract': {'value': 'Quantitative and numerical comprehension '
+                                   'in language is an important task in many '
+                                   'fields like education and finance, but '
+                                   'still remains a challenging task for '
+                                   'language models. While tool and calculator '
+                                   'usage has shown to be helpful to improve '
+                                   'mathematical reasoning in large pretrained '
+                                   'decoder-only language models, this remains '
+                                   'unexplored for smaller language models '
+                                   'with encoders. In this paper, we propose '
+                                   'Pre-Calc, a simple pre-finetuning '
+                                   'objective of learning to use the '
+                                   'calculator for both encoder-only and '
+                                   'encoder-decoder architectures, formulated '
+                                   'as a discriminative and generative task '
+                                   'respectively. We pre-train BERT and '
+                                   'RoBERTa for discriminative calculator use '
+                                   'and Flan-T5 for generative calculator use '
+                                   'on the MAWPS, SVAMP, and AsDiv-A datasets, '
+                                   'which improves performance on downstream '
+                                   'tasks that require numerical '
+                                   'understanding.'},
+             'authorids': {'value': ['~Vishruth_Veerendranath1',
+                                     '~Vishwa_Shah1',
+                                     '~Kshitish_Ghate1']},
+             'authors': {'value': ['Vishruth Veerendranath',
+                                   'Vishwa Shah',
+                                   'Kshitish Ghate']},
+             'keywords': {'value': ['MathNLI', 'Mathematical Reasoning']},
+             'paperhash': {'value': 'veerendranath|precalc_learning_to_use_the_calculator_improves_numeracy_in_language_models'},
+             'pdf': {'value': '/pdf/4c53285eb3ec1484b1b90f4da18df757f653be53.pdf'},
+             'title': {'value': 'Pre-Calc: Learning to Use the Calculator '
+                                'Improves Numeracy in Language Models'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'Hb5gA02FyR',
+ 'id': 'Hb5gA02FyR',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission20/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720239786207,
+ 'nonreaders': None,
+ 'number': 20,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956517,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission20/Authors'],
+ 'tcdate': 1717220072927,
+ 'tmdate': 1720239786207,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission20/Authors']}","{'cdate': 1717157156632,
+ 'content': {'TLDR': {'value': 'How did recursive numeral systems emerge? We '
+                               'take steps towards a mechanistic explanation '
+                               'via a Reinforcement Learning approach which '
+                               'optimizes a lexicon under a given '
+                               'meta-grammar.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'thomas2024learning,\n'
+                                  'title={Learning Efficient Recursive Numeral '
+                                  'Systems via Reinforcement Learning},\n'
+                                  'author={Jonathan David Thomas and Andrea '
+                                  'Silvi and Devdatt Dubhashi and Emil '
+                                  'Carlsson and Moa Johansson},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=HTcdrmGrZ0}\n'
+                                  '}'},
+             'abstract': {'value': 'The emergence of mathematical concepts, '
+                                   'such as number systems, is an understudied '
+                                   'area in AI for mathematics and reasoning. '
+                                   'It has previously been shown (Carlsson et '
+                                   'al., 2021) that by using reinforcement '
+                                   'learning (RL), agents can derive simple '
+                                   'approximate and exact-restricted numeral '
+                                   'systems. However, it is a major challenge '
+                                   'to show how more complex recursive numeral '
+                                   'systems, similar to the one utilised in '
+                                   'English, could arise via a simple learning '
+                                   'mechanism such as RL. Here, we introduce '
+                                   'an approach towards deriving a mechanistic '
+                                   'explanation of the emergence of recursive '
+                                   'number systems where we consider an RL '
+                                   'agent which directly optimizes a lexicon '
+                                   'under a given meta-grammar. Utilising a '
+                                   'slightly modified version of the seminal '
+                                   'meta-grammar of (Hurford, 1975), we '
+                                   'demonstrate that our RL agent can '
+                                   'effectively modify the lexicon towards '
+                                   'Pareto-optimal configurations which are '
+                                   'comparable to those observed within human '
+                                   'numeral systems.'},
+             'authorids': {'value': ['~Jonathan_David_Thomas2',
+                                     'andrea.silvi@chalmers.se',
+                                     '~Devdatt_Dubhashi1',
+                                     '~Emil_Carlsson1',
+                                     '~Moa_Johansson1']},
+             'authors': {'value': ['Jonathan David Thomas',
+                                   'Andrea Silvi',
+                                   'Devdatt Dubhashi',
+                                   'Emil Carlsson',
+                                   'Moa Johansson']},
+             'keywords': {'value': ['Reinforcement Learning',
+                                    'Recursive Numeral Systems',
+                                    'Representation Learning',
+                                    'Language Evolution']},
+             'paperhash': {'value': 'thomas|learning_efficient_recursive_numeral_systems_via_reinforcement_learning'},
+             'pdf': {'value': '/pdf/017a4ef5896e1abf13238bf6c96df91a351c84ea.pdf'},
+             'title': {'value': 'Learning Efficient Recursive Numeral Systems '
+                                'via Reinforcement Learning'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'HTcdrmGrZ0',
+ 'id': 'HTcdrmGrZ0',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission13/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1719630055541,
+ 'nonreaders': None,
+ 'number': 13,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956287,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission13/Authors'],
+ 'tcdate': 1717157156632,
+ 'tmdate': 1719630055541,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission13/Authors']}","{'cdate': 1717234120599,
+ 'content': {'TLDR': {'value': 'We propose SPADeR, an approach to '
+                               'autoformalization that uses language models to '
+                               'infer and explicitly incorporate implicit '
+                               'details from informal proofs'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'tarrach2024more,\n'
+                                  'title={More Details, Please: Improving '
+                                  'Autoformalization with More Detailed '
+                                  'Proofs},\n'
+                                  'author={Guillem Tarrach and Albert Q. Jiang '
+                                  'and Daniel Raggi and Wenda Li and Mateja '
+                                  'Jamnik},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=AkJvzpYMvK}\n'
+                                  '}'},
+             'abstract': {'value': 'The formalization of mathematical theorems '
+                                   'and their proofs is a time-consuming and '
+                                   'tedious process which, despite recent '
+                                   'advances in the reasoning capabilities of '
+                                   'AI systems, remains a challenging task for '
+                                   'computers. Existing attempts to automate '
+                                   'the process with language models struggle '
+                                   'with the difference in level of detail '
+                                   'between formal and informal proofs. '
+                                   'Successful autoformalization requires '
+                                   'models to understand and be able to '
+                                   'explain the nuances of logical arguments, '
+                                   'a critical aspect of reasoning that is '
+                                   'often overlooked in existing research. In '
+                                   'this work, we introduce Sketch, Prove, Add '
+                                   'Detail & Repeat (SPADeR), an approach that '
+                                   'enhances proof autoformalizers by using '
+                                   'language models to infer and explicitly '
+                                   'incorporate implicit details from informal '
+                                   'proofs. With the same number of '
+                                   'autoformalization attempts, our method '
+                                   'increases the percentage of successfully '
+                                   'formalized problems in the miniF2F test '
+                                   'dataset from 34.8% to 38.1%.'},
+             'authorids': {'value': ['~Guillem_Tarrach1',
+                                     '~Albert_Q._Jiang1',
+                                     '~Daniel_Raggi1',
+                                     '~Wenda_Li1',
+                                     '~Mateja_Jamnik1']},
+             'authors': {'value': ['Guillem Tarrach',
+                                   'Albert Q. Jiang',
+                                   'Daniel Raggi',
+                                   'Wenda Li',
+                                   'Mateja Jamnik']},
+             'keywords': {'value': ['autoformalization',
+                                    'formalization',
+                                    'automated theorem proving',
+                                    'large language models',
+                                    'proof verification',
+                                    'mathematical reasoning']},
+             'paperhash': {'value': 'tarrach|more_details_please_improving_autoformalization_with_more_detailed_proofs'},
+             'pdf': {'value': '/pdf/648d1ef62a6f6ea84faa78689bbf3a7ceec0fc9a.pdf'},
+             'title': {'value': 'More Details, Please: Improving '
+                                'Autoformalization with More Detailed Proofs'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': 'AkJvzpYMvK',
+ 'id': 'AkJvzpYMvK',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission24/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1719996245497,
+ 'nonreaders': None,
+ 'number': 24,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956645,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission24/Authors'],
+ 'tcdate': 1717234120599,
+ 'tmdate': 1719996245497,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission24/Authors']}","{'cdate': 1717240339762,
+ 'content': {'TLDR': {'value': 'We investigated open-source Large Language '
+                               ""Model's capabilities to solve optimization ""
+                               'problem'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'nguyen2024technical,\n'
+                                  'title={Technical Report for {ICML} 2024 '
+                                  'Automated Math Reasoning Challenge: Solving '
+                                  'Optimization Problems with Open Source '
+                                  'Large Language Model},\n'
+                                  'author={Duc M. Nguyen and Sungahn Ko},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=4XzGkm1jK0}\n'
+                                  '}'},
+             'abstract': {'value': 'This technical report presents an approach '
+                                   'utilizing open-source Large Language '
+                                   'Models for Automated Optimization '
+                                   'Problem-solving With Code Challenge at the '
+                                   'ICML 2024 AI4Math Workshop. This challenge '
+                                   'emphasizes the ability of Large Language '
+                                   'Models (LLMs) to handle complex '
+                                   'mathematical reasoning from formulating to '
+                                   'solving the problem at hand. By exploring '
+                                   'different prompting techniques, such as '
+                                   'few-shot, self-consistency, '
+                                   'chain-of-thought, and tree-of-thought, we '
+                                   'aim to explore the current '
+                                   ""state-of-the-art LLMs' mathematical ""
+                                   'reasoning abilities.'},
+             'authorids': {'value': ['~Duc_M._Nguyen1', '~Sungahn_Ko1']},
+             'authors': {'value': ['Duc M. Nguyen', 'Sungahn Ko']},
+             'keywords': {'value': ['Open Source',
+                                    'Large Language Model',
+                                    'Automated Math Reasoning',
+                                    'Prompt Engineering']},
+             'paperhash': {'value': 'nguyen|technical_report_for_icml_2024_automated_math_reasoning_challenge_solving_optimization_problems_with_open_source_large_language_model'},
+             'pdf': {'value': '/pdf/0587d424a1a041845ea791237cb2754d46157cc3.pdf'},
+             'title': {'value': 'Technical Report for ICML 2024 Automated Math '
+                                'Reasoning Challenge: Solving Optimization '
+                                'Problems with Open Source Large Language '
+                                'Model'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': '4XzGkm1jK0',
+ 'id': '4XzGkm1jK0',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission26/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720018794047,
+ 'nonreaders': None,
+ 'number': 26,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956725,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission26/Authors'],
+ 'tcdate': 1717240339762,
+ 'tmdate': 1720018794047,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission26/Authors']}","{'cdate': 1716224456459,
+ 'content': {'TLDR': {'value': 'We present Eurus, state-of-the-art open LLM '
+                               'reasoning generalists and its recipe.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'yuan2024advancing,\n'
+                                  'title={Advancing {LLM} Reasoning '
+                                  'Generalists with Preference Trees},\n'
+                                  'author={Lifan Yuan and Ganqu Cui and Hanbin '
+                                  'Wang and Ning Ding and Xingyao Wang and Jia '
+                                  'Deng and Boji Shan and Huimin Chen and '
+                                  'Ruobing Xie and Yankai Lin and Zhenghao Liu '
+                                  'and Bowen Zhou and Hao Peng and Zhiyuan Liu '
+                                  'and Maosong Sun},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=2Y1iiCqM5y}\n'
+                                  '}'},
+             'abstract': {'value': 'We introduce Eurus, a suite of large '
+                                   'language models (LLMs) optimized for '
+                                   'reasoning. Finetuned from Mistral-7B and '
+                                   'CodeLlama-70B, Eurus models achieve '
+                                   'state-of-the-art results among open-source '
+                                   'models on a diverse set of benchmarks '
+                                   'covering mathematics, code generation, and '
+                                   'logical reasoning problems. Notably, '
+                                   'Eurus-70B beats GPT-3.5 Turbo in reasoning '
+                                   'through a comprehensive benchmarking '
+                                   'across 12 tests covering five tasks, and '
+                                   'achieves a 33.3% pass@1 accuracy on '
+                                   'LeetCode and 32.6% on TheoremQA, two '
+                                   'challenging benchmarks, substantially '
+                                   'outperforming existing open-source models '
+                                   'by margins more than 13.3%. The strong '
+                                   'performance of EURUS can be primarily '
+                                   'attributed to ULTRAINTERACT, our '
+                                   'newly-curated large-scale, high-quality '
+                                   'alignment dataset specifically designed '
+                                   'for complex reasoning tasks. ULTRAINTERACT '
+                                   'can be used in both supervised fine-tuning '
+                                   'and preference learning. For each '
+                                   'instruction, it includes a preference tree '
+                                   'consisting of (1) reasoning chains with '
+                                   'diverse planning strategies in a unified '
+                                   'format, (2) multi-turn interaction '
+                                   'trajectories with the environment and the '
+                                   'critique, and (3) pairwise data to '
+                                   'facilitate preference learning. '
+                                   'ULTRAINTERACT allows us to conduct an '
+                                   'in-depth exploration of preference '
+                                   'learning for reasoning tasks. Our '
+                                   'investigation reveals that some '
+                                   'well-established preference learning '
+                                   'algorithms may be less suitable for '
+                                   'reasoning tasks compared to their '
+                                   'effectiveness in general conversations. '
+                                   'Inspired by this, we derive a novel reward '
+                                   'modeling objective which, together with '
+                                   'ULTRAINTERACT, leads to a strong reward '
+                                   'model. All artifacts produced during this '
+                                   'research will be made public.'},
+             'authorids': {'value': ['~Lifan_Yuan1',
+                                     '~Ganqu_Cui1',
+                                     '~Hanbin_Wang1',
+                                     '~Ning_Ding5',
+                                     '~Xingyao_Wang1',
+                                     '~Jia_Deng5',
+                                     '~Boji_Shan1',
+                                     '~Huimin_Chen3',
+                                     '~Ruobing_Xie2',
+                                     '~Yankai_Lin1',
+                                     '~Zhenghao_Liu2',
+                                     '~Bowen_Zhou8',
+                                     '~Hao_Peng4',
+                                     '~Zhiyuan_Liu1',
+                                     '~Maosong_Sun1']},
+             'authors': {'value': ['Lifan Yuan',
+                                   'Ganqu Cui',
+                                   'Hanbin Wang',
+                                   'Ning Ding',
+                                   'Xingyao Wang',
+                                   'Jia Deng',
+                                   'Boji Shan',
+                                   'Huimin Chen',
+                                   'Ruobing Xie',
+                                   'Yankai Lin',
+                                   'Zhenghao Liu',
+                                   'Bowen Zhou',
+                                   'Hao Peng',
+                                   'Zhiyuan Liu',
+                                   'Maosong Sun']},
+             'keywords': {'value': ['Alignment',
+                                    'Data',
+                                    'Reasoning',
+                                    'Preference Tree']},
+             'paperhash': {'value': 'yuan|advancing_llm_reasoning_generalists_with_preference_trees'},
+             'pdf': {'value': '/pdf/cdf640fc47f06c403bd674317fc554bcacd8d5e9.pdf'},
+             'title': {'value': 'Advancing LLM Reasoning Generalists with '
+                                'Preference Trees'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': '2Y1iiCqM5y',
+ 'id': '2Y1iiCqM5y',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720018572940,
+ 'nonreaders': None,
+ 'number': 3,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281955887,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission3/Authors'],
+ 'tcdate': 1716224456459,
+ 'tmdate': 1720018572940,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission3/Authors']}","{'cdate': 1716385090216,
+ 'content': {'TLDR': {'value': 'We created a dataset of geometry problems and '
+                               'conducted a systematic evaluation of large '
+                               'models.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'kazemi2024geomverse,\n'
+                                  'title={GeomVerse: A Systematic Evaluation '
+                                  'of Large Models for Geometric Reasoning},\n'
+                                  'author={Mehran Kazemi and Hamidreza Alvari '
+                                  'and Ankit Anand and Jialin Wu and Xi Chen '
+                                  'and Radu Soricut},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=1AUbiBrOF1}\n'
+                                  '}'},
+             'abstract': {'value': 'Large language models have shown '
+                                   'impressive results for multi-hop '
+                                   'mathematical reasoning when the input '
+                                   'question is only textual. Many '
+                                   'mathematical reasoning problems, however, '
+                                   'contain both text and image. With the '
+                                   'ever-increasing adoption of vision '
+                                   'language models (VLMs), understanding '
+                                   'their reasoning abilities for such '
+                                   'problems is crucial. \n'
+                                   'In this paper, we evaluate the reasoning '
+                                   'capabilities of VLMs along various axes '
+                                   'through the lens of geometry problems. \n'
+                                   'We procedurally create a synthetic dataset '
+                                   'of geometry questions with controllable '
+                                   'difficulty levels along multiple axes, '
+                                   'thus enabling a systematic evaluation.\n'
+                                   'The empirical results obtained using our '
+                                   'benchmark for state-of-the-art VLMs '
+                                   'indicate that these models are not as '
+                                   'capable in subjects like geometry (and, by '
+                                   'generalization, other topics requiring '
+                                   'similar reasoning) as suggested by '
+                                   'previous benchmarks. This is made '
+                                   'especially clear by the construction of '
+                                   'our benchmark at various depth levels, '
+                                   'since solving higher-depth problems '
+                                   'requires long chains of reasoning rather '
+                                   'than additional memorized knowledge.'},
+             'authorids': {'value': ['~Mehran_Kazemi1',
+                                     '~Hamidreza_Alvari1',
+                                     '~Ankit_Anand4',
+                                     '~Jialin_Wu1',
+                                     '~Xi_Chen23',
+                                     '~Radu_Soricut2']},
+             'authors': {'value': ['Mehran Kazemi',
+                                   'Hamidreza Alvari',
+                                   'Ankit Anand',
+                                   'Jialin Wu',
+                                   'Xi Chen',
+                                   'Radu Soricut']},
+             'keywords': {'value': ['Large Language Models',
+                                    'Vision Language Models',
+                                    'LLM Reasoning',
+                                    'Geometric Reasoning']},
+             'paperhash': {'value': 'kazemi|geomverse_a_systematic_evaluation_of_large_models_for_geometric_reasoning'},
+             'pdf': {'value': '/pdf/3ba5283059bb755e01651618340073d09b23f233.pdf'},
+             'title': {'value': 'GeomVerse: A Systematic Evaluation of Large '
+                                'Models for Geometric Reasoning'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': '1AUbiBrOF1',
+ 'id': '1AUbiBrOF1',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720144407634,
+ 'nonreaders': None,
+ 'number': 5,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281955968,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission5/Authors'],
+ 'tcdate': 1716385090216,
+ 'tmdate': 1720144407634,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission5/Authors']}","{'cdate': 1716999791387,
+ 'content': {'TLDR': {'value': 'Extracting metacognitive knowledge from LLMs '
+                               'and using it to improve math reasoning.'},
+             '_bibtex': {'value': '@inproceedings{\n'
+                                  'didolkar2024metacognitive,\n'
+                                  'title={Metacognitive Capabilities of '
+                                  '{LLM}s: An Exploration in Mathematical '
+                                  'Problem Solving},\n'
+                                  'author={Aniket Rajiv Didolkar and Anirudh '
+                                  'Goyal and Nan Rosemary Ke and Siyuan Guo '
+                                  'and Michal Valko and Timothy P Lillicrap '
+                                  'and Danilo Jimenez Rezende and Yoshua '
+                                  'Bengio and Michael Curtis Mozer and Sanjeev '
+                                  'Arora},\n'
+                                  'booktitle={AI for Math Workshop @ ICML '
+                                  '2024},\n'
+                                  'year={2024},\n'
+                                  'url={https://openreview.net/forum?id=0MsI3bSmmD}\n'
+                                  '}'},
+             'abstract': {'value': '\\emph{Metacognitive knowledge} refers to '
+                                   ""humans' intuitive knowledge of their own ""
+                                   ""thinking and reasoning processes. Today's ""
+                                   'best LLMs clearly possess some reasoning '
+                                   'processes. The paper gives evidence that '
+                                   'they also  have metacognitive knowledge, '
+                                   'including ability to name skills and '
+                                   'procedures to apply given a task. We '
+                                   'explore this primarily in context of math '
+                                   'reasoning, developing a prompt-guided '
+                                   'interaction procedure  to get a powerful  '
+                                   'LLM to assign sensible skill labels to '
+                                   'math questions, followed by having it '
+                                   'perform semantic clustering to obtain '
+                                   'coarser families of skill labels. These '
+                                   'coarse skill labels look interpretable to '
+                                   'humans.\n'
+                                   '\n'
+                                   'To validate that these skill labels are '
+                                   ""meaningful and relevant to the LLM's ""
+                                   'reasoning processes we perform the '
+                                   'following experiments. (a) We ask GPT-4 to '
+                                   'assign skill labels to training questions '
+                                   'in math datasets GSM8K and MATH.  (b) When '
+                                   'using an LLM to solve the test questions, '
+                                   'we present it with the full list of skill '
+                                   'labels and ask it to identify the skill '
+                                   'needed. Then it is presented with randomly '
+                                   'selected exemplar solved questions '
+                                   'associated with that skill label.  This '
+                                   'improves accuracy on GSM8k and MATH for '
+                                   'several strong LLMs, including '
+                                   'code-assisted models. The methodology '
+                                   'presented is domain-agnostic,  even though '
+                                   'this article applies it to math problems.'},
+             'authorids': {'value': ['~Aniket_Rajiv_Didolkar1',
+                                     '~Anirudh_Goyal1',
+                                     '~Nan_Rosemary_Ke1',
+                                     '~Siyuan_Guo1',
+                                     '~Michal_Valko1',
+                                     '~Timothy_P_Lillicrap1',
+                                     '~Danilo_Jimenez_Rezende2',
+                                     '~Yoshua_Bengio1',
+                                     '~Michael_Curtis_Mozer1',
+                                     '~Sanjeev_Arora1']},
+             'authors': {'value': ['Aniket Rajiv Didolkar',
+                                   'Anirudh Goyal',
+                                   'Nan Rosemary Ke',
+                                   'Siyuan Guo',
+                                   'Michal Valko',
+                                   'Timothy P Lillicrap',
+                                   'Danilo Jimenez Rezende',
+                                   'Yoshua Bengio',
+                                   'Michael Curtis Mozer',
+                                   'Sanjeev Arora']},
+             'keywords': {'value': ['metacognitive knowledge',
+                                    'math reasoning']},
+             'paperhash': {'value': 'didolkar|metacognitive_capabilities_of_llms_an_exploration_in_mathematical_problem_solving'},
+             'pdf': {'value': '/pdf/b658ad52e686b34e585fbe860bd4a1bbf08341ab.pdf'},
+             'title': {'value': 'Metacognitive Capabilities of LLMs: An '
+                                'Exploration in Mathematical Problem Solving'},
+             'venue': {'value': 'ICML 2024 Workshop AI4MATH Poster'},
+             'venueid': {'value': 'ICML.cc/2024/Workshop/AI4MATH'}},
+ 'ddate': None,
+ 'details': None,
+ 'domain': 'ICML.cc/2024/Workshop/AI4MATH',
+ 'forum': '0MsI3bSmmD',
+ 'id': '0MsI3bSmmD',
+ 'invitations': ['ICML.cc/2024/Workshop/AI4MATH/-/Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Post_Submission',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/Edit',
+                 'ICML.cc/2024/Workshop/AI4MATH/Submission7/-/Revision',
+                 'ICML.cc/2024/Workshop/AI4MATH/-/PC_Revision'],
+ 'license': 'CC BY 4.0',
+ 'mdate': 1720019820751,
+ 'nonreaders': None,
+ 'number': 7,
+ 'odate': 1718280492391,
+ 'parent_invitations': None,
+ 'pdate': 1718281956068,
+ 'readers': ['everyone'],
+ 'replyto': None,
+ 'signatures': ['ICML.cc/2024/Workshop/AI4MATH/Submission7/Authors'],
+ 'tcdate': 1716999791387,
+ 'tmdate': 1720019820751,
+ 'writers': ['ICML.cc/2024/Workshop/AI4MATH',
+             'ICML.cc/2024/Workshop/AI4MATH/Submission7/Authors']}"
