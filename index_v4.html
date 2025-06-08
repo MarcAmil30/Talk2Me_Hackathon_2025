@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resonance chat – Conference Match Form</title>
+  <meta name="theme-color" content="#0d1117" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Inter, Arial, sans-serif;
+      --text-dark: #c9d1d9;
+      --text-muted: #8b949e;
+      --bg-page: #0d1117;
+      --bg-sheet: rgba(22, 27, 34, 0.88);
+      --border-sheet: #30363d;
+      --shadow-sheet: 0 12px 28px rgba(0, 0, 0, 0.55);
+      --radius-xl: 24px;
+      --radius-md: 12px;
+      --accent-from: #00e5ff;
+      --accent-to:   #7c3aed;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body { height: 100%; margin: 0; font-family: var(--font-stack); background: var(--bg-page); color: var(--text-dark); }
+
+    body { display: grid; place-items: start center; padding: 6vh 1rem; }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      text-align: center;
+      letter-spacing: -0.015em;
+      background: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 42ch;
+      margin: 0 auto 3rem;
+      line-height: 1.4;
+    }
+
+    .sheet {
+      width: min(100%, 720px);
+      backdrop-filter: blur(32px) saturate(180%);
+      background: var(--bg-sheet);
+      border: 1px solid var(--border-sheet);
+      box-shadow: var(--shadow-sheet);
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      animation: fadeInUp 0.8s cubic-bezier(.4,.2,.2,1) forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 0 2rem;
+      color: #ff79c6;
+    }
+
+    .form-group { margin-bottom: 1.8rem; }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border-sheet);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1rem;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text-dark);
+      background: #161b22;
+      resize: vertical;
+    }
+
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent-to);
+      box-shadow: 0 0 0 2px rgba(124,58,237,0.45);
+      background: #0d1117;
+    }
+
+    button {
+      appearance: none;
+      border: none;
+      width: 100%;
+      padding: 1rem 1.2rem;
+      margin-top: 0.2rem;
+      border-radius: var(--radius-md);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+      box-shadow: 0 6px 14px rgba(0,229,255,0.35), 0 6px 14px rgba(124,58,237,0.35);
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(0,229,255,0.4), 0 10px 22px rgba(124,58,237,0.4);
+      filter: brightness(1.1);
+    }
+
+    .response {
+      margin-top: 2rem;
+      background: #161b22;
+      border: 1px solid var(--border-sheet);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      color: var(--text-dark);
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Welcome to Resonance chat</h1>
+    <p class="subtitle">Tell us about yourself and what&nbsp;you’re looking for at your upcoming conference.</p>
+
+    <form class="sheet" method="post">
+      <h2 id="formTitle">Conference Information</h2>
+
+      <div class="form-group">
+        <label for="event">Which event are you going to?</label>
+        <select id="event" name="event" required>
+          <option value="" disabled selected>Select a conference</option>
+          <option value="compmotif">Compmotif Hackathon (London)</option>
+          <option value="icml2024">ICML 2024</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="about">Tell us about you in a few sentences</label>
+        <textarea id="about" name="about" rows="4" placeholder="Your background, interests, etc." required>{{ request.form.about or '' }}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="goals">What are you looking for at the conference?</label>
+        <textarea id="goals" name="goals" rows="4" placeholder="What do you hope to gain, learn, or achieve?" required>{{ request.form.goals or '' }}</textarea>
+      </div>
+
+      <button type="submit">Find my best match</button>
+    </form>
+
+    {% if answer %}
+    <div class="response">
+      <strong>Suggested Contact:</strong><br>{{ answer }}
+    </div>
+    {% endif %}
+  </main>
+</body>
+</html>
