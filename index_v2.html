@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TALK2ME – Conference Match Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #0F172A; /* dark navy */
+      --color-secondary: #1e293b; /* lighter navy */
+      --color-border: #E2E8F0;   /* card border */
+      --color-input-border: #CBD5E1;
+      --color-input-bg: #ffffff;
+      --color-button-bg: #0F172A;
+      --color-button-text: #ffffff;
+      --radius-base: 8px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--color-primary);
+      background-color: #fafafa;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 40px 16px;
+      line-height: 1.5;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      margin-bottom: 32px;
+      color: #475569;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-base);
+      padding: 40px 32px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h2 {
+      margin: 0 0 32px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--color-input-border);
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: var(--color-input-bg);
+      resize: vertical;
+    }
+
+    select:focus,
+    textarea:focus,
+    button:focus {
+      outline: 2px solid #3b82f6;
+      outline-offset: 2px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: var(--color-button-bg);
+      color: var(--color-button-text);
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #111827;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Welcome to TALK2ME</h1>
+    <p class="subtitle">Tell us about yourself and what you’re looking for at your upcoming conference</p>
+
+    <form class="card" action="#" method="post">
+      <h2>Conference Information</h2>
+
+      <div class="form-group">
+        <label for="event">Which event are you going to?</label>
+        <select id="event" name="event" required>
+          <option value="">Select a conference</option>
+          <option value="slush">Slush</option>
+          <option value="websummit">Web Summit</option>
+          <option value="tnw">The Next Web</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="about">Tell us about you in a few sentences</label>
+        <textarea id="about" name="about" rows="4" placeholder="Share a bit about yourself, your background, interests, etc." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="goals">What are you looking for at the conference?</label>
+        <textarea id="goals" name="goals" rows="4" placeholder="What do you hope to gain, learn, or achieve at this conference?" required></textarea>
+      </div>
+
+      <button type="submit">Find my best match</button>
+    </form>
+  </div>
+</body>
+</html>
